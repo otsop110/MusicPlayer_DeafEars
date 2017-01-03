@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">harmon.io</string>
+    <string name="trending">Trending Music</string>
+    <string name="favourites">My Favourites</string>
+    <string name="playing">Playing Now</string>
+    <string name="explore">Explore</string>
+    <string name="playlist">Playlists</string>
+    <string name="library">My library</string>
+    <string name="albums">Albums</string>
+    <string name="artists">Artists</string>
+    <string name="search_music">Search Music</string>
+    <string name="this_album">This album</string>
+    <string name="album_intent">In this intent we show the contents of the album. In this screen we would have a button for buying the album or a song. The payment needs to be secure and we would integrate Android Pay API in the purchase flow. </string>
+    <string name="playing_intent">In this intent we show the player with the name of the album and the album cover, Player buttons, timeline of the song and volume slider. We need to use MediaPlayer APIs. MediaPlayer class is the primary API for playing sound and video. An object of this class can fetch, decode, and play both audio and video with minimal setup. </string>
+    <string name="library_intent">This intent shows the contents of your Music library. A clickable menu Artists, Albums, Playlists or Songs and a list of Recently played music. Clicking any of the items will open yet another intent that organizes your music by these categories in alphabetical order. </string>
+    <string name="playlists_intent">In this intent we show users Playlists.</string>
+    <string name="explore_intent">In this intent we explore harmon.io and show a selection made by harmon.io for the user based on the recently added music by the user. We also suggest playlists such as Hot hits, Tubes from your youth or Sunday evening groove. </string>
+    <string name="search_intent">In this intent we show search results from harmon.io by search term.</string>
+    <string name="favourites_intent">In this intent we show users favourites by different categories such as Albums, Artists, Songs.</string>
+    <string name="trending_intent">harmon.io selection for you with the trendy touch.</string>
+</resources>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.deafears.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <LinearLayout
+            android:layout_width="336dp"
+            android:layout_height="52dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/library"
+                style="@style/TopBarTextView"
+                android:text="@string/library" />
+
+            <TextView
+                android:id="@+id/playlists"
+                style="@style/TopBarTextView"
+                android:text="@string/playlist" />
+
+            <TextView
+                android:id="@+id/explore"
+                style="@style/TopBarTextView"
+                android:text="@string/explore" />
+
+            <TextView
+                android:id="@+id/search"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:background="@drawable/search" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/trending"
+                    style="@style/TrendingTextView"
+                    android:text="@string/trending" />
+
+                <TextView
+                    android:id="@+id/album_one"
+                    style="@style/AlbumList"
+                    android:background="@drawable/albumcover" />
+
+                <TextView
+                    style="@style/AlbumList"
+                    android:background="@drawable/albumcover" />
+
+                <TextView
+                    style="@style/AlbumList"
+                    android:background="@drawable/albumcover" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/favourites"
+                    style="@style/TrendingTextView"
+                    android:text="@string/favourites" />
+
+                <TextView
+                    style="@style/AlbumList"
+                    android:background="@drawable/albumcover" />
+
+                <TextView
+                    style="@style/AlbumList"
+                    android:background="@drawable/albumcover" />
+
+                <TextView
+                    style="@style/AlbumList"
+                    android:background="@drawable/albumcover" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/playing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/playing"
+                android:textColor="@color/textDark"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/play" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
